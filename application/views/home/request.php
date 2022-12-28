@@ -355,128 +355,92 @@
         </nav>
 
         <!-- INI AKHIR NAVBAR -->
-
-        <!-- INI CAROUSEL -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="7000">
-            <div class="carousel-inner" role="listbox">
-                <!--slide 1-->
-                <div class="carousel-item active" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../assets/img/bg/umn.png);">
-                </div>
-            </div>
-            <!--caption-->
-            <div class="carousel-caption text-center">
-                <h1>WELCOME TO SIMBA</h1>
-                <a class="btn btn-outline-light btn-lg" href="#Menu">Get Started</a>
-            </div>
-
-        </div>
-
-        <div id="Menu" class="text-center">
-            <div class="jumbotron jumbotron-fluid aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-bottom" data-aos-once="true">
-                <h2 class="heading" style="margin-bottom: 75px;"><b>MENU</b></h2>
-                <div class="heading-underline"></div>
-
-                <!--first card-->
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <a href="<?= base_url('home/request'); ?>">
-                                <div class="card-1">
-                                    <img src="../assets/img/bg/req.png" class="card-img-top" alt="..." style="height: 100px; width: 100px;">
-                                    <h5 class="card-title m-1">Request Bimbingan</h5>
+        <div class="bootstrap-iso">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <form>
+                            <div class="form-group row">
+                                <label for="inputNama3" class="col-sm-2 col-form-label">Nama</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="inputNama3" placeholder="Nama">
                                 </div>
-                            </a>
-                        </div>
-                        <div class="col-md-4">
-                            <a href="<?= base_url('home/history'); ?>">
-                                <div class="card-1">
-                                    <img src="../assets/img/bg/his.png" class="card-img-top" alt="..." style="height: 100px; width: 100px;">
-                                    <h5 class=" card-title m-1 ">History Bimbingan</h5>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputNIM3" class="col-sm-2 col-form-label">NIM</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="inputNIM3" placeholder="NIM">
                                 </div>
-                            </a>
-                        </div>
-                        <div class=" col-md-4">
-                            <a href="<?= base_url('home/info'); ?>">
-                                <div class="card-1">
-                                    <img src="../assets/img/bg/info.png" class="card-img-top" alt="..." style="height: 100px; width: 100px;">
-                                    <h5 class=" card-title m-1 ">Info Kurikulum</h5>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
                                 </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!--end of first card-->
-            </div>
-        </div>
-    </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputTopik3" class="col-sm-2 col-form-label">Topik</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="inputTopik3" placeholder="Topik">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputDosen3" class="col-sm-2 col-form-label">Dosen</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="inputDosen3" placeholder="Dosen">
+                                </div>
+                            </div>
 
-    <div class=" modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="<?= base_url('auth/logout'); ?>">Logout</a>
+                            <div class="form-group row">
+                                <div class="col-sm-10">
+                                    <button type="submit" class="btn btn-primary">Send Request</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    </footer>
 
-    <div class="modal fade" id="book_ticket" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" style="display: none;" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content modl">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Booking Ticket</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="reset()">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body" id="book_ticket">
-                    <div>
-                        <label for="exampleInputName">Name</label>
-                        <input type="text" class="form-control" id="nametransaction" placeholder="Full name" value="">
+
+        <div class=" modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
                     </div>
-                    <div>
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="example@gmail.com" value="">
-                    </div>
-                    <div>
-                        <label for="exampleInputDate">date</label>
-                        <input type="date" class="form-control select-date" id="bookingdate" value="">
-                    </div>
-                    <div>
-                        <label for="exampleInputCount">How many ticket?</label>
-                        <input type="number" min="0" class="form-control" id="countticket" onchange="calculate()" value="1">
-                    </div>
-                    <div>
-                        <label for="exampleInputCount">Price</label>
-                        <input type="number" class="form-control" id="price" value="" disabled="">
-                        <label id="price2"></label>
-                    </div>
-                    <div>
-                        <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="reset()">Cancel</button>
-                        <button type="button" onclick="booking('',place)" class="btn btn-warning">Book now</button>
+                    <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                        <a class="btn btn-primary" href="<?= base_url('auth/logout'); ?>">Logout</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script>
-        AOS.init();
-    </script>
+        </footer>
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script>
+            AOS.init();
+        </script>
+        <!--  jQuery -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+        <!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
+        <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+
+        <!-- Bootstrap Date-Picker Plugin -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
 </body>
 
 </html>

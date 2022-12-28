@@ -22,21 +22,30 @@ class Home extends CI_Controller
         $this->load->view('home/indexlogged', $data);
     }
 
-    public function tips()
+    public function request()
     {
         is_logged_in();
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
 
-        $this->load->view('home/tips', $data);
+        $this->load->view('home/request', $data);
     }
 
-    public function experience()
+    public function history()
     {
         is_logged_in();
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
 
-        $this->load->view('home/experience', $data);
+        $this->load->view('home/history', $data);
+    }
+
+    public function info()
+    {
+        is_logged_in();
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+
+        $this->load->view('home/info', $data);
     }
 }
