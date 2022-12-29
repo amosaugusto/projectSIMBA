@@ -379,23 +379,31 @@
                 <!--first card-->
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-4">
-                            <a href="<?= base_url('home/request'); ?>">
+                        <div class="col-md-3">
+                            <a href="<?= base_url('home/report'); ?>">
                                 <div class="card-1">
-                                    <img src="../assets/img/bg/req.png" class="card-img-top" alt="..." style="height: 100px; width: 100px;">
-                                    <h5 class="card-title m-1">Request Bimbingan</h5>
+                                    <img src="../assets/img/bg/report.png" class="card-img-top" alt="..." style="height: 100px; width: 100px;">
+                                    <h5 class="card-title m-1">Report Rekap Bimbingan Dosen</h5>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <a href="<?= base_url('home/history'); ?>">
                                 <div class="card-1">
-                                    <img src="../assets/img/bg/his.png" class="card-img-top" alt="..." style="height: 100px; width: 100px;">
+                                    <img src="../assets/img/bg/hisprod.png" class="card-img-top" alt="..." style="height: 100px; width: 100px;">
                                     <h5 class=" card-title m-1 ">History Bimbingan</h5>
                                 </div>
                             </a>
                         </div>
-                        <div class=" col-md-4">
+                        <div class=" col-md-3">
+                            <a href="<?= base_url('home/info'); ?>">
+                                <div class="card-1">
+                                    <img src="../assets/img/bg/persentase.png" class="card-img-top" alt="..." style="height: 100px; width: 100px;">
+                                    <h5 class=" card-title m-1 ">Persentase Bimbingan</h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class=" col-md-3">
                             <a href="<?= base_url('home/info'); ?>">
                                 <div class="card-1">
                                     <img src="../assets/img/bg/info.png" class="card-img-top" alt="..." style="height: 100px; width: 100px;">

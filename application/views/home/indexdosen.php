@@ -380,22 +380,40 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4">
-                            <a href="<?= base_url('home/request'); ?>">
+                            <a href="<?= base_url('home/new'); ?>">
                                 <div class="card-1">
-                                    <img src="../assets/img/bg/req.png" class="card-img-top" alt="..." style="height: 100px; width: 100px;">
-                                    <h5 class="card-title m-1">Request Bimbingan</h5>
+                                    <img src="../assets/img/bg/buat.png" class="card-img-top" alt="..." style="height: 100px; width: 100px;">
+                                    <h5 class="card-title m-1">Buat Jadwal Bimbingan</h5>
                                 </div>
                             </a>
                         </div>
                         <div class="col-md-4">
-                            <a href="<?= base_url('home/history'); ?>">
+                            <a href="<?= base_url('home/approval'); ?>">
                                 <div class="card-1">
-                                    <img src="../assets/img/bg/his.png" class="card-img-top" alt="..." style="height: 100px; width: 100px;">
-                                    <h5 class=" card-title m-1 ">History Bimbingan</h5>
+                                    <img src="../assets/img/bg/approvdos.png" class="card-img-top" alt="..." style="height: 100px; width: 100px;">
+                                    <h5 class=" card-title m-1 ">Approval Bimbingan</h5>
                                 </div>
                             </a>
                         </div>
                         <div class=" col-md-4">
+                            <a href="<?= base_url('home/catdos'); ?>">
+                                <div class="card-1">
+                                    <img src="../assets/img/bg/catdos.png" class="card-img-top" alt="..." style="height: 100px; width: 100px;">
+                                    <h5 class=" card-title m-1 ">Pencatatan Bimbingan</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 70px;">
+                        <div class="col-md-6">
+                            <a href="<?= base_url('home/hisdos'); ?>">
+                                <div class="card-1">
+                                    <img src="../assets/img/bg/hisdos.png" class="card-img-top" alt="..." style="height: 100px; width: 100px;">
+                                    <h5 class="card-title m-1">History Mahasiswa Bimbingan</h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
                             <a href="<?= base_url('home/info'); ?>">
                                 <div class="card-1">
                                     <img src="../assets/img/bg/info.png" class="card-img-top" alt="..." style="height: 100px; width: 100px;">

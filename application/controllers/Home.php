@@ -13,6 +13,23 @@ class Home extends CI_Controller
         $this->load->view('home/index');
     }
 
+    public function indexProdi()
+    {
+        is_logged_in();
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+
+        $this->load->view('home/indexprodi', $data);
+    }
+    public function indexDosen()
+    {
+        is_logged_in();
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+
+        $this->load->view('home/indexdosen', $data);
+    }
+
     public function indexLogged()
     {
         is_logged_in();
@@ -71,5 +88,61 @@ class Home extends CI_Controller
 
 
         $this->load->view('home/kurikulum1620', $data);
+    }
+    public function report()
+    {
+        is_logged_in();
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+
+        $this->load->view('home/report', $data);
+    }
+    public function new()
+    {
+        is_logged_in();
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+
+        $this->load->view('home/new', $data);
+    }
+    public function newmassal()
+    {
+        is_logged_in();
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+
+        $this->load->view('home/newmassal', $data);
+    }
+    public function newindividu()
+    {
+        is_logged_in();
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+
+        $this->load->view('home/newindividu', $data);
+    }
+    public function approval()
+    {
+        is_logged_in();
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+
+        $this->load->view('home/approval', $data);
+    }
+    public function catdos()
+    {
+        is_logged_in();
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+
+        $this->load->view('home/catdos', $data);
+    }
+    public function hisdos()
+    {
+        is_logged_in();
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+
+        $this->load->view('home/hisdos', $data);
     }
 }

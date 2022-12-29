@@ -231,997 +231,488 @@
                     </div>
                 </div>
                 <div class="col-9 offset-3" id="main">
-                    <div class="accordion" id="accordion1">
+                    <div class="accordion" id="accordion1" style="margin-top:20px;">
+                        <div class="card">
+                            <div class="accordion-group">
+                                <div class="card-header accordion-heading">
+                                    <a class="btn btn-link accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne">
+                                        IT Governance
+                                    </a>
+                                </div>
+                                <div id="collapseOne" class="accordion-body collapse">
+                                    <div class="accordion-inner">
 
-                        <div class="accordion-group">
-                            <div class="accordion-heading">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne">
-                                    IT Governance
-                                </a>
-                            </div>
-                            <div id="collapseOne" class="accordion-body collapse">
-                                <div class="accordion-inner">
+                                        <!-- Here we insert another nested accordion -->
+                                        <div class="card-body">
+                                            <div class="accordion" id="accordion2">
+                                                <div class="card">
+                                                    <div class="accordion-group">
+                                                        <div class="card-header accordion-heading">
+                                                            <a class="btn btn-link accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseInnerOne">
+                                                                Semester 1
+                                                            </a>
+                                                        </div>
+                                                        <div id="collapseInnerOne" class="accordion-body collapse in">
+                                                            <div class="card-body accordion-inner">
+                                                                <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-group">
+                                                        <div class="card-header accordion-heading">
+                                                            <a class="btn btn-link accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseInnerTwo">
+                                                                Semester 2
+                                                            </a>
+                                                        </div>
+                                                        <div id="collapseInnerTwo" class="accordion-body collapse">
+                                                            <div class="card-body accordion-inner">
+                                                                <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-group">
+                                                        <div class="card-header accordion-heading">
+                                                            <a class="btn btn-link accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseInnerThree">
+                                                                Semester 3
+                                                            </a>
+                                                        </div>
+                                                        <div id="collapseInnerThree" class="accordion-body collapse">
+                                                            <div class="card-body accordion-inner">
+                                                                <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-group">
+                                                        <div class="card-header accordion-heading">
+                                                            <a class="btn btn-link accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseInnerFour">
+                                                                Semester 4
+                                                            </a>
+                                                        </div>
+                                                        <div id="collapseInnerFour" class="accordion-body collapse">
+                                                            <div class="card-body accordion-inner">
+                                                                <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-group">
+                                                        <div class="card-header accordion-heading">
+                                                            <a class="btn btn-link accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseInnerFive">
+                                                                Semester 5
+                                                            </a>
+                                                        </div>
+                                                        <div id="collapseInnerFive" class="accordion-body collapse">
+                                                            <div class="card-body accordion-inner">
+                                                                <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-group">
+                                                        <div class="card-header accordion-heading">
+                                                            <a class="btn btn-link accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseInnerSix">
+                                                                Semester 6
+                                                            </a>
+                                                        </div>
+                                                        <div id="collapseInnerSix" class="accordion-body collapse">
+                                                            <div class="card-body accordion-inner">
+                                                                <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-group">
+                                                        <div class="card-header accordion-heading">
+                                                            <a class="btn btn-link accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseInnerSeven">
+                                                                Semester 7
+                                                            </a>
+                                                        </div>
+                                                        <div id="collapseInnerSeven" class="accordion-body collapse">
+                                                            <div class="card-body accordion-inner">
+                                                                <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-group">
+                                                        <div class="card-header accordion-heading">
+                                                            <a class="btn btn-link accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseInnerEight">
+                                                                Semester 8
+                                                            </a>
+                                                        </div>
+                                                        <div id="collapseInnerEight" class="accordion-body collapse">
+                                                            <div class="card-body accordion-inner">
+                                                                <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
 
-                                    <!-- Here we insert another nested accordion -->
-
-                                    <div class="accordion" id="accordion2">
-                                        <div class="accordion-group">
-                                            <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseInnerOne">
-                                                    Semester 1
-                                                </a>
-                                            </div>
-                                            <div id="collapseInnerOne" class="accordion-body collapse in">
-                                                <div class="accordion-inner">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion-group">
-                                            <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseInnerTwo">
-                                                    Semester 2
-                                                </a>
-                                            </div>
-                                            <div id="collapseInnerTwo" class="accordion-body collapse">
-                                                <div class="accordion-inner">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion-group">
-                                            <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseInnerThree">
-                                                    Semester 3
-                                                </a>
-                                            </div>
-                                            <div id="collapseInnerThree" class="accordion-body collapse">
-                                                <div class="accordion-inner">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion-group">
-                                            <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseInnerFour">
-                                                    Semester 4
-                                                </a>
-                                            </div>
-                                            <div id="collapseInnerFour" class="accordion-body collapse">
-                                                <div class="accordion-inner">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion-group">
-                                            <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseInnerFive">
-                                                    Semester 5
-                                                </a>
-                                            </div>
-                                            <div id="collapseInnerFive" class="accordion-body collapse">
-                                                <div class="accordion-inner">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion-group">
-                                            <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseInnerSix">
-                                                    Semester 6
-                                                </a>
-                                            </div>
-                                            <div id="collapseInnerSix" class="accordion-body collapse">
-                                                <div class="accordion-inner">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion-group">
-                                            <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseInnerSeven">
-                                                    Semester 7
-                                                </a>
-                                            </div>
-                                            <div id="collapseInnerSeven" class="accordion-body collapse">
-                                                <div class="accordion-inner">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion-group">
-                                            <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseInnerEight">
-                                                    Semester 8
-                                                </a>
-                                            </div>
-                                            <div id="collapseInnerEight" class="accordion-body collapse">
-                                                <div class="accordion-inner">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
-                                                </div>
-                                            </div>
+                                            <!-- Inner accordion ends here -->
                                         </div>
                                     </div>
-
-                                    <!-- Inner accordion ends here -->
-
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="accordion" id="accordion2">
+                        <div class="card">
+                            <div class="accordion-group">
+                                <div class="card-header accordion-heading">
+                                    <a class="btn btn-link accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                                        ERP Specialist
+                                    </a>
+                                </div>
+                                <div id="collapseTwo" class="accordion-body collapse">
+                                    <div class="accordion-inner">
 
-                        <div class="accordion-group">
-                            <div class="accordion-heading">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-                                    ERP Specialist
-                                </a>
-                            </div>
-                            <div id="collapseTwo" class="accordion-body collapse">
-                                <div class="accordion-inner">
+                                        <!-- Here we insert another nested accordion -->
+                                        <div class="card-body">
+                                            <div class="accordion" id="accordion2">
+                                                <div class="card">
+                                                    <div class="accordion-group">
+                                                        <div class="card-header accordion-heading">
+                                                            <a class="btn btn-link accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseInnerNine">
+                                                                Semester 1
+                                                            </a>
+                                                        </div>
+                                                        <div id="collapseInnerNine" class="accordion-body collapse in">
+                                                            <div class="card-body accordion-inner">
+                                                                <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-group">
+                                                        <div class="card-header accordion-heading">
+                                                            <a class="btn btn-link accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseInnerTen">
+                                                                Semester 2
+                                                            </a>
+                                                        </div>
+                                                        <div id="collapseInnerTen" class="accordion-body collapse">
+                                                            <div class="card-body accordion-inner">
+                                                                <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-group">
+                                                        <div class="card-header accordion-heading">
+                                                            <a class="btn btn-link accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseInnerEleven">
+                                                                Semester 3
+                                                            </a>
+                                                        </div>
+                                                        <div id="collapseInnerEleven" class="accordion-body collapse">
+                                                            <div class="card-body accordion-inner">
+                                                                <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-group">
+                                                        <div class="card-header accordion-heading">
+                                                            <a class="btn btn-link accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseInnerTwelve">
+                                                                Semester 4
+                                                            </a>
+                                                        </div>
+                                                        <div id="collapseInnerTwelve" class="accordion-body collapse">
+                                                            <div class="card-body accordion-inner">
+                                                                <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-group">
+                                                        <div class="card-header accordion-heading">
+                                                            <a class="btn btn-link accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseInnerThirteen">
+                                                                Semester 5
+                                                            </a>
+                                                        </div>
+                                                        <div id="collapseInnerThirteen" class="accordion-body collapse">
+                                                            <div class="card-body accordion-inner">
+                                                                <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-group">
+                                                        <div class="card-header accordion-heading">
+                                                            <a class="btn btn-link accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseInnerFourteen">
+                                                                Semester 6
+                                                            </a>
+                                                        </div>
+                                                        <div id="collapseInnerFourteen" class="accordion-body collapse">
+                                                            <div class="card-body accordion-inner">
+                                                                <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-group">
+                                                        <div class="card-header accordion-heading">
+                                                            <a class="btn btn-link accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseInnerFifteen">
+                                                                Semester 7
+                                                            </a>
+                                                        </div>
+                                                        <div id="collapseInnerFifteen" class="accordion-body collapse">
+                                                            <div class="card-body accordion-inner">
+                                                                <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-group">
+                                                        <div class="card-header accordion-heading">
+                                                            <a class="btn btn-link accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseInnerSixteen">
+                                                                Semester 8
+                                                            </a>
+                                                        </div>
+                                                        <div id="collapseInnerSixteen" class="accordion-body collapse">
+                                                            <div class="card-body accordion-inner">
+                                                                <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
-                                    <!-- Here we insert another nested accordion -->
+                                        <!-- Inner accordion ends here -->
 
-                                    <div class="accordion" id="accordion2">
-                                        <div class="accordion-group">
-                                            <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseInnerNine">
-                                                    Semester 1
-                                                </a>
-                                            </div>
-                                            <div id="collapseInnerNine" class="accordion-body collapse in">
-                                                <div class="accordion-inner">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion-group">
-                                            <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseInnerTen">
-                                                    Semester 2
-                                                </a>
-                                            </div>
-                                            <div id="collapseInnerTen" class="accordion-body collapse">
-                                                <div class="accordion-inner">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion-group">
-                                            <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseInnerEleven">
-                                                    Semester 3
-                                                </a>
-                                            </div>
-                                            <div id="collapseInnerEleven" class="accordion-body collapse">
-                                                <div class="accordion-inner">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion-group">
-                                            <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseInnerTwelve">
-                                                    Semester 4
-                                                </a>
-                                            </div>
-                                            <div id="collapseInnerTwelve" class="accordion-body collapse">
-                                                <div class="accordion-inner">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion-group">
-                                            <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseInnerThirteen">
-                                                    Semester 5
-                                                </a>
-                                            </div>
-                                            <div id="collapseInnerThirteen" class="accordion-body collapse">
-                                                <div class="accordion-inner">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion-group">
-                                            <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseInnerFourteen">
-                                                    Semester 6
-                                                </a>
-                                            </div>
-                                            <div id="collapseInnerFourteen" class="accordion-body collapse">
-                                                <div class="accordion-inner">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion-group">
-                                            <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseInnerFifteen">
-                                                    Semester 7
-                                                </a>
-                                            </div>
-                                            <div id="collapseInnerFifteen" class="accordion-body collapse">
-                                                <div class="accordion-inner">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion-group">
-                                            <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseInnerSixteen">
-                                                    Semester 8
-                                                </a>
-                                            </div>
-                                            <div id="collapseInnerSixteen" class="accordion-body collapse">
-                                                <div class="accordion-inner">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
-
-                                    <!-- Inner accordion ends here -->
-
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="accordion" id="accordion3">
+                        <div class="card">
+                            <div class="accordion-group">
+                                <div class="card-header accordion-heading">
+                                    <a class="btn btn-link accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseThree">
+                                        Database Specialist
+                                    </a>
+                                </div>
+                                <div id="collapseThree" class="accordion-body collapse">
+                                    <div class="accordion-inner">
 
-                        <div class="accordion-group">
-                            <div class="accordion-heading">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseThree">
-                                    Database Specialist
-                                </a>
-                            </div>
-                            <div id="collapseThree" class="accordion-body collapse">
-                                <div class="accordion-inner">
+                                        <!-- Here we insert another nested accordion -->
+                                        <div class="card-body">
+                                            <div class="accordion" id="accordion3">
+                                                <div class="card">
+                                                    <div class="accordion-group">
+                                                        <div class="card-header accordion-heading">
+                                                            <a class="btn btn-link accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseInnerSeventeen">
+                                                                Semester 1
+                                                            </a>
+                                                        </div>
+                                                        <div id="collapseInnerSeventeen" class="accordion-body collapse in">
+                                                            <div class="card-body accordion-inner">
+                                                                <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-group">
+                                                        <div class="card-header accordion-heading">
+                                                            <a class="btn btn-link accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseInnerEighteen">
+                                                                Semester 2
+                                                            </a>
+                                                        </div>
+                                                        <div id="collapseInnerEighteen" class="accordion-body collapse">
+                                                            <div class="card-body accordion-inner">
+                                                                <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-group">
+                                                        <div class="card-header accordion-heading">
+                                                            <a class="btn btn-link accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseInnerNineteen">
+                                                                Semester 3
+                                                            </a>
+                                                        </div>
+                                                        <div id="collapseInnerNineteen" class="accordion-body collapse">
+                                                            <div class="card-body accordion-inner">
+                                                                <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-group">
+                                                        <div class="card-header accordion-heading">
+                                                            <a class="btn btn-link accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseInnerTwenty">
+                                                                Semester 4
+                                                            </a>
+                                                        </div>
+                                                        <div id="collapseInnerTwenty" class="accordion-body collapse">
+                                                            <div class="card-body accordion-inner">
+                                                                <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-group">
+                                                        <div class="card-header accordion-heading">
+                                                            <a class="btn btn-link accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseInnerTwentyone">
+                                                                Semester 5
+                                                            </a>
+                                                        </div>
+                                                        <div id="collapseInnerTwentyone" class="accordion-body collapse">
+                                                            <div class="card-body accordion-inner">
+                                                                <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-group">
+                                                        <div class="card-header accordion-heading">
+                                                            <a class="btn btn-link accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseInnerTwentytwo">
+                                                                Semester 6
+                                                            </a>
+                                                        </div>
+                                                        <div id="collapseInnerTwentytwo" class="accordion-body collapse">
+                                                            <div class="card-body accordion-inner">
+                                                                <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-group">
+                                                        <div class="card-header accordion-heading">
+                                                            <a class="btn btn-link accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseInnerTwentyThree">
+                                                                Semester 7
+                                                            </a>
+                                                        </div>
+                                                        <div id="collapseInnerTwentyThree" class="accordion-body collapse">
+                                                            <div class="card-body accordion-inner">
+                                                                <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-group">
+                                                        <div class="card-header accordion-heading">
+                                                            <a class="btn btn-link accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseInnerTwentyFour">
+                                                                Semester 8
+                                                            </a>
+                                                        </div>
+                                                        <div id="collapseInnerTwentyFour" class="accordion-body collapse">
+                                                            <div class="card-body accordion-inner">
+                                                                <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
 
-                                    <!-- Here we insert another nested accordion -->
-
-                                    <div class="accordion" id="accordion3">
-                                        <div class="accordion-group">
-                                            <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseInnerSeventeen">
-                                                    Semester 1
-                                                </a>
-                                            </div>
-                                            <div id="collapseInnerSeventeen" class="accordion-body collapse in">
-                                                <div class="accordion-inner">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion-group">
-                                            <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseInnerEighteen">
-                                                    Semester 2
-                                                </a>
-                                            </div>
-                                            <div id="collapseInnerEighteen" class="accordion-body collapse">
-                                                <div class="accordion-inner">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion-group">
-                                            <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseInnerNineteen">
-                                                    Semester 3
-                                                </a>
-                                            </div>
-                                            <div id="collapseInnerNineteen" class="accordion-body collapse">
-                                                <div class="accordion-inner">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion-group">
-                                            <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseInnerTwenty">
-                                                    Semester 4
-                                                </a>
-                                            </div>
-                                            <div id="collapseInnerTwenty" class="accordion-body collapse">
-                                                <div class="accordion-inner">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion-group">
-                                            <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseInnerTwentyone">
-                                                    Semester 5
-                                                </a>
-                                            </div>
-                                            <div id="collapseInnerTwentyone" class="accordion-body collapse">
-                                                <div class="accordion-inner">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion-group">
-                                            <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseInnerTwentytwo">
-                                                    Semester 6
-                                                </a>
-                                            </div>
-                                            <div id="collapseInnerTwentytwo" class="accordion-body collapse">
-                                                <div class="accordion-inner">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion-group">
-                                            <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseInnerTwentyThree">
-                                                    Semester 7
-                                                </a>
-                                            </div>
-                                            <div id="collapseInnerTwentyThree" class="accordion-body collapse">
-                                                <div class="accordion-inner">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion-group">
-                                            <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseInnerTwentyFour">
-                                                    Semester 8
-                                                </a>
-                                            </div>
-                                            <div id="collapseInnerTwentyFour" class="accordion-body collapse">
-                                                <div class="accordion-inner">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
-                                                </div>
-                                            </div>
+                                            <!-- Inner accordion ends here -->
                                         </div>
                                     </div>
-
-                                    <!-- Inner accordion ends here -->
-
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="accordion" id="accordion4">
-
-                        <div class="accordion-group">
-                            <div class="accordion-heading">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#collapseFour">
-                                    Big Data Specialist
-                                </a>
-                            </div>
-                            <div id="collapseFour" class="accordion-body collapse">
-                                <div class="accordion-inner">
-
-                                    <!-- Here we insert another nested accordion -->
-
-                                    <div class="accordion" id="accordion4">
-                                        <div class="accordion-group">
-                                            <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#collapseInnerTwentyFive">
-                                                    Semester 1
-                                                </a>
-                                            </div>
-                                            <div id="collapseInnerTwentyFive" class="accordion-body collapse in">
-                                                <div class="accordion-inner">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion-group">
-                                            <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#collapseInnerTwentySix">
-                                                    Semester 2
-                                                </a>
-                                            </div>
-                                            <div id="collapseInnerTwentySix" class="accordion-body collapse">
-                                                <div class="accordion-inner">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion-group">
-                                            <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#collapseInnerTwentySeven">
-                                                    Semester 3
-                                                </a>
-                                            </div>
-                                            <div id="collapseInnerTwentySeven" class="accordion-body collapse">
-                                                <div class="accordion-inner">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion-group">
-                                            <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#collapseInnerTwentyEight">
-                                                    Semester 4
-                                                </a>
-                                            </div>
-                                            <div id="collapseInnerTwentyEight" class="accordion-body collapse">
-                                                <div class="accordion-inner">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion-group">
-                                            <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#collapseInnerTwentyNine">
-                                                    Semester 5
-                                                </a>
-                                            </div>
-                                            <div id="collapseInnerTwentyNine" class="accordion-body collapse">
-                                                <div class="accordion-inner">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion-group">
-                                            <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#collapseInnerThirty">
-                                                    Semester 6
-                                                </a>
-                                            </div>
-                                            <div id="collapseInnerThirty" class="accordion-body collapse">
-                                                <div class="accordion-inner">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion-group">
-                                            <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#collapseInnerThirtyOne">
-                                                    Semester 7
-                                                </a>
-                                            </div>
-                                            <div id="collapseInnerThirtyOne" class="accordion-body collapse">
-                                                <div class="accordion-inner">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion-group">
-                                            <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#collapseInnerThirtyTwo">
-                                                    Semester 8
-                                                </a>
-                                            </div>
-                                            <div id="collapseInnerThirtyTwo" class="accordion-body collapse">
-                                                <div class="accordion-inner">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Inner accordion ends here -->
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="accordion">
                         <div class="card">
-                            <div class="card-header" id="headingOne">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        IT Governance
-                                    </button>
-                                </h5>
-                            </div>
-
-                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                                <div class="card-body">
-                                    <div id="accordion">
-                                        <div class="card">
-                                            <div class="card-header" id="headingOne">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                        Semester 1
-                                                    </button>
-                                                </h5>
-                                            </div>
-
-                                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                                                <div class="card-body">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="headingTwo">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                        Semester 2
-                                                    </button>
-                                                </h5>
-                                            </div>
-                                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                                                <div class="card-body">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem2.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="headingThree">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                        Semester 3
-                                                    </button>
-                                                </h5>
-                                            </div>
-                                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                                                <div class="card-body">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem3.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="headingFour">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                                        Semester 4
-                                                    </button>
-                                                </h5>
-                                            </div>
-                                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                                                <div class="card-body">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem4.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="headingFive">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                                        Semester 5
-                                                    </button>
-                                                </h5>
-                                            </div>
-                                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-                                                <div class="card-body">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem5.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="headingSix">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                                        Semester 6
-                                                    </button>
-                                                </h5>
-                                            </div>
-                                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
-                                                <div class="card-body">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem6.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="headingSeven">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                                        Semester 7
-                                                    </button>
-                                                </h5>
-                                            </div>
-                                            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
-                                                <div class="card-body">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem7.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="headingEight">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                                        Semester 8
-                                                    </button>
-                                                </h5>
-                                            </div>
-                                            <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
-                                                <div class="card-body">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem8.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="accordion">
-                        <div class="card">
-                            <div class="card-header" id="headingOne">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        ERP Specialist
-                                    </button>
-                                </h5>
-                            </div>
-
-                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                                <div class="card-body">
-                                    <div id="accordion">
-                                        <div class="card">
-                                            <div class="card-header" id="headingOne">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                        Semester 1
-                                                    </button>
-                                                </h5>
-                                            </div>
-
-                                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                                                <div class="card-body">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="headingTwo">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                        Semester 2
-                                                    </button>
-                                                </h5>
-                                            </div>
-                                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                                                <div class="card-body">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem2.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="headingThree">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                        Semester 3
-                                                    </button>
-                                                </h5>
-                                            </div>
-                                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                                                <div class="card-body">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem3.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="headingFour">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                                        Semester 4
-                                                    </button>
-                                                </h5>
-                                            </div>
-                                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                                                <div class="card-body">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem4.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="headingFive">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                                        Semester 5
-                                                    </button>
-                                                </h5>
-                                            </div>
-                                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-                                                <div class="card-body">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem5.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="headingSix">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                                        Semester 6
-                                                    </button>
-                                                </h5>
-                                            </div>
-                                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
-                                                <div class="card-body">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem6.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="headingSeven">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                                        Semester 7
-                                                    </button>
-                                                </h5>
-                                            </div>
-                                            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
-                                                <div class="card-body">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem7.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="headingEight">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                                        Semester 8
-                                                    </button>
-                                                </h5>
-                                            </div>
-                                            <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
-                                                <div class="card-body">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem8.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="accordion">
-                        <div class="card">
-                            <div class="card-header" id="headingOne">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Database Specialist
-                                    </button>
-                                </h5>
-                            </div>
-
-                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                                <div class="card-body">
-                                    <div id="accordion">
-                                        <div class="card">
-                                            <div class="card-header" id="headingOne">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                        Semester 1
-                                                    </button>
-                                                </h5>
-                                            </div>
-
-                                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                                                <div class="card-body">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="headingTwo">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                        Semester 2
-                                                    </button>
-                                                </h5>
-                                            </div>
-                                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                                                <div class="card-body">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem2.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="headingThree">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                        Semester 3
-                                                    </button>
-                                                </h5>
-                                            </div>
-                                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                                                <div class="card-body">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem3.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="headingFour">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                                        Semester 4
-                                                    </button>
-                                                </h5>
-                                            </div>
-                                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                                                <div class="card-body">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem4.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="headingFive">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                                        Semester 5
-                                                    </button>
-                                                </h5>
-                                            </div>
-                                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-                                                <div class="card-body">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem5.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="headingSix">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                                        Semester 6
-                                                    </button>
-                                                </h5>
-                                            </div>
-                                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
-                                                <div class="card-body">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem6.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="headingSeven">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                                        Semester 7
-                                                    </button>
-                                                </h5>
-                                            </div>
-                                            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
-                                                <div class="card-body">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem7.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="headingEight">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                                        Semester 8
-                                                    </button>
-                                                </h5>
-                                            </div>
-                                            <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
-                                                <div class="card-body">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem8.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="accordion">
-                        <div class="card">
-                            <div class="card-header" id="headingOne">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <div class="accordion-group">
+                                <div class="card-header accordion-heading">
+                                    <a class="btn btn-link accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#collapseFour">
                                         Big Data Specialist
-                                    </button>
-                                </h5>
-                            </div>
+                                    </a>
+                                </div>
+                                <div id="collapseFour" class="accordion-body collapse">
+                                    <div class="accordion-inner">
 
-                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                                <div class="card-body">
-                                    <div id="accordion">
-                                        <div class="card">
-                                            <div class="card-header" id="headingOne">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                        Semester 1
-                                                    </button>
-                                                </h5>
-                                            </div>
+                                        <!-- Here we insert another nested accordion -->
 
-                                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                                                <div class="card-body">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
+                                        <div class="card-body">
+                                            <div class="accordion" id="accordion4">
+                                                <div class="card">
+                                                    <div class="accordion-group">
+                                                        <div class="card-header accordion-heading">
+                                                            <a class="btn btn-link accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#collapseInnerTwentyFive">
+                                                                Semester 1
+                                                            </a>
+                                                        </div>
+                                                        <div id="collapseInnerTwentyFive" class="accordion-body collapse in">
+                                                            <div class="card-body accordion-inner">
+                                                                <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-group">
+                                                        <div class="card-header accordion-heading">
+                                                            <a class="btn btn-link accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#collapseInnerTwentySix">
+                                                                Semester 2
+                                                            </a>
+                                                        </div>
+                                                        <div id="collapseInnerTwentySix" class="accordion-body collapse">
+                                                            <div class="card-body accordion-inner">
+                                                                <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-group">
+                                                        <div class="card-header accordion-heading">
+                                                            <a class="btn btn-link accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#collapseInnerTwentySeven">
+                                                                Semester 3
+                                                            </a>
+                                                        </div>
+                                                        <div id="collapseInnerTwentySeven" class="accordion-body collapse">
+                                                            <div class="card-body accordion-inner">
+                                                                <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-group">
+                                                        <div class="card-header accordion-heading">
+                                                            <a class="btn btn-link accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#collapseInnerTwentyEight">
+                                                                Semester 4
+                                                            </a>
+                                                        </div>
+                                                        <div id="collapseInnerTwentyEight" class="accordion-body collapse">
+                                                            <div class="card-body accordion-inner">
+                                                                <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-group">
+                                                        <div class="card-header accordion-heading">
+                                                            <a class="btn btn-link accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#collapseInnerTwentyNine">
+                                                                Semester 5
+                                                            </a>
+                                                        </div>
+                                                        <div id="collapseInnerTwentyNine" class="accordion-body collapse">
+                                                            <div class="card-body accordion-inner">
+                                                                <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-group">
+                                                        <div class="card-header accordion-heading">
+                                                            <a class="btn btn-link accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#collapseInnerThirty">
+                                                                Semester 6
+                                                            </a>
+                                                        </div>
+                                                        <div id="collapseInnerThirty" class="accordion-body collapse">
+                                                            <div class="card-body accordion-inner">
+                                                                <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-group">
+                                                        <div class="card-header accordion-heading">
+                                                            <a class="btn btn-link accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#collapseInnerThirtyOne">
+                                                                Semester 7
+                                                            </a>
+                                                        </div>
+                                                        <div id="collapseInnerThirtyOne" class="accordion-body collapse">
+                                                            <div class="card-body accordion-inner">
+                                                                <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-group">
+                                                        <div class="card-header accordion-heading">
+                                                            <a class="btn btn-link accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#collapseInnerThirtyTwo">
+                                                                Semester 8
+                                                            </a>
+                                                        </div>
+                                                        <div id="collapseInnerThirtyTwo" class="accordion-body collapse">
+                                                            <div class="card-body accordion-inner">
+                                                                <img src="<?= base_url('assets/img/bg/mbkmsem1.png'); ?>" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card">
-                                            <div class="card-header" id="headingTwo">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                        Semester 2
-                                                    </button>
-                                                </h5>
-                                            </div>
-                                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                                                <div class="card-body">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem2.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="headingThree">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                        Semester 3
-                                                    </button>
-                                                </h5>
-                                            </div>
-                                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                                                <div class="card-body">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem3.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="headingFour">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                                        Semester 4
-                                                    </button>
-                                                </h5>
-                                            </div>
-                                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                                                <div class="card-body">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem4.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="headingFive">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                                        Semester 5
-                                                    </button>
-                                                </h5>
-                                            </div>
-                                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-                                                <div class="card-body">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem5.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="headingSix">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                                        Semester 6
-                                                    </button>
-                                                </h5>
-                                            </div>
-                                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
-                                                <div class="card-body">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem6.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="headingSeven">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                                        Semester 7
-                                                    </button>
-                                                </h5>
-                                            </div>
-                                            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
-                                                <div class="card-body">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem7.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="headingEight">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                                        Semester 8
-                                                    </button>
-                                                </h5>
-                                            </div>
-                                            <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
-                                                <div class="card-body">
-                                                    <img src="<?= base_url('assets/img/bg/mbkmsem8.png'); ?>" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
+
+                                        <!-- Inner accordion ends here -->
+
                                     </div>
                                 </div>
                             </div>

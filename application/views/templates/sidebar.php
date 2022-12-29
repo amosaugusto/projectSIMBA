@@ -6,7 +6,7 @@
         <div class="sidebar-brand-icon">
             <i class="fas fa-building"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">Artisan Tourism</div>
+        <div class="sidebar-brand-text mx-3">SIMBA</div>
     </a>
 
     <!-- Divider -->
