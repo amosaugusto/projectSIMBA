@@ -48,4 +48,28 @@ class Home extends CI_Controller
 
         $this->load->view('home/info', $data);
     }
+    public function kalenderakademik()
+    {
+        is_logged_in();
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+
+        $this->load->view('home/kalenderakademik', $data);
+    }
+    public function kurikulummbkm()
+    {
+        is_logged_in();
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+
+        $this->load->view('home/kurikulummbkm', $data);
+    }
+    public function kurikulum1620()
+    {
+        is_logged_in();
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+
+        $this->load->view('home/kurikulum1620', $data);
+    }
 }

@@ -1,6 +1,12 @@
 <!doctype html>
 <html lang="en">
 <style>
+    .form-req {
+        border: 1px solid black;
+        box-shadow: 3px;
+
+    }
+
     .fixed-top {
         position: fixed;
         top: 0;
@@ -90,49 +96,6 @@
         padding: 0;
     }
 
-    .carousel {
-        position: relative;
-    }
-
-    .carousel-inner {
-        position: relative;
-        width: 100%;
-        overflow: hidden;
-    }
-
-    .carousel-item {
-        position: relative;
-        display: none;
-        float: left;
-        width: 100%;
-        margin-right: -100%;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-
-        height: 100vh;
-        background-size: cover;
-        background-position: center;
-    }
-
-    .carousel-caption {
-        font-family: 'Josefin Slab', serif;
-        top: 35%;
-        text-transform: uppercase;
-        position: absolute;
-        right: 15%;
-        bottom: 20px;
-        left: 15%;
-        z-index: 10;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        color: #fff;
-        text-align: center;
-    }
-
-    .carousel-caption h2 {
-        font-size: 1rem;
-        margin-top: 20px;
-    }
 
     .btn-outline-light {
         color: #f8f9fa;
@@ -174,92 +137,10 @@
         margin-left: 20px;
     }
 
-    .carousel-control-next,
-    .carousel-control-prev {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        z-index: 1;
-        display: flex;
-        -ms-flex-align: center;
-        align-items: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        width: 15%;
-        color: #fff;
-        text-align: center;
-        opacity: .5;
-    }
-
-    .card-body {
-        -ms-flex: 1 1 auto;
-        flex: 1 1 auto;
-        min-height: 1px;
-        padding: 1.25rem;
-    }
-
-    .card {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        min-width: 0;
-        word-wrap: break-word;
-        background-color: #fff;
-        background-clip: border-box;
-        border: 1px solid rgba(0, 0, 0, .125);
-        border-radius: 0.25rem;
-    }
-
     *,
     ::after,
     ::before {
         box-sizing: border-box;
-    }
-
-    .card-img,
-    .card-img-bottom,
-    .card-img-top {
-        -ms-flex-negative: 0;
-        flex-shrink: 0;
-        width: 100%;
-    }
-
-    .card-img,
-    .card-img-top {
-        border-top-left-radius: calc(0.25rem - 1px);
-        border-top-right-radius: calc(0.25rem - 1px);
-    }
-
-    .card-body {
-        flex: 1 1 auto;
-        min-height: 1px;
-        padding: 1.25rem;
-        color: black;
-        text-align: justify;
-        background-color: white;
-    }
-
-    .jumbotron-fluid {
-        padding-right: 0;
-        padding-left: 0;
-        border-radius: 0;
-    }
-
-    .jumbotron-4 {
-        background-size: cover;
-        margin-top: 30px !important;
-        margin-left: 20px;
-        margin-right: 20px;
-        padding-bottom: 20px;
-    }
-
-    .jumbotron-4 h1 {
-        margin-left: 50px;
-        padding-top: 50px;
-        font-size: 35PX;
-        font-family: 'Oswald', sans-serif;
-        color: white;
-        font-weight: 600;
     }
 
     .icon {
@@ -269,39 +150,6 @@
         right: 10px;
         padding: 0px;
         top: 5px;
-    }
-
-    .boxt {
-        width: 500px;
-        height: 220px;
-        border-radius: 10px;
-        box-shadow: 5px 10px 12px rgb(0 0 0 / 70%);
-        flex-direction: column;
-        align-items: center;
-        box-sizing: border-box;
-        justify-content: space-between;
-        margin: 20px 10px;
-        background-size: cover;
-        margin-left: 30px;
-        margin-top: 50px;
-    }
-
-    .boxe {
-        width: 500px;
-        height: 220px;
-        border-radius: 10px;
-        box-shadow: 5px 10px 12px rgb(0 0 0 / 70%);
-        flex-direction: column;
-        align-items: center;
-        box-sizing: border-box;
-        justify-content: space-between;
-        margin: 20px 10px;
-        background-size: cover;
-        margin-left: 760px;
-    }
-
-    [data-aos].aos-animate {
-        pointer-events: auto;
     }
 </style>
 
@@ -355,12 +203,13 @@
         </nav>
 
         <!-- INI AKHIR NAVBAR -->
-        <div class="bootstrap-iso">
+        <div class="bootstrap-iso ">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="row justify-content-center align-items-center" style="margin-top:100px; border:1px;">
+                    <div class="form-req col-md-6 col-sm-6 col-xs-12">
+                        <h3 style="text-align: center;">Request Bimbingan</h3>
                         <form>
-                            <div class="form-group row">
+                            <div class="form-group row" style="margin-top: 20px;">
                                 <label for="inputNama3" class="col-sm-2 col-form-label">Nama</label>
                                 <div class="col-sm-10">
                                     <input type="text" class="form-control" id="inputNama3" placeholder="Nama">
@@ -373,19 +222,18 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-                                <div class="col-sm-10">
-                                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                                </div>
+                                <!-- Date input -->
+                                <label class="col-sm-2 col-form-label" for="date">Date</label>
+                                <input class="form-control col-sm-10" id="date" name="date" placeholder="MM/DD/YYY" type="text" />
                             </div>
                             <div class="form-group row">
-                                <label for="inputTopik3" class="col-sm-2 col-form-label">Topik</label>
+                                <label for="inputTopik3" class="col-sm-2 col-form-label">Topik Bahasan</label>
                                 <div class="col-sm-10">
                                     <input type="text" class="form-control" id="inputTopik3" placeholder="Topik">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="inputDosen3" class="col-sm-2 col-form-label">Dosen</label>
+                                <label for="inputDosen3" class="col-sm-2 col-form-label">Dosen Pembimbing</label>
                                 <div class="col-sm-10">
                                     <input type="text" class="form-control" id="inputDosen3" placeholder="Dosen">
                                 </div>
@@ -441,6 +289,19 @@
         <!-- Bootstrap Date-Picker Plugin -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
+        <script>
+            $(document).ready(function() {
+                var date_input = $('input[name="date"]'); //our date input has the name "date"
+                var container = $('.bootstrap-iso form').length > 0 ? $('.bootstrap-iso form').parent() : "body";
+                var options = {
+                    format: 'mm/dd/yyyy',
+                    container: container,
+                    todayHighlight: true,
+                    autoclose: true,
+                };
+                date_input.datepicker(options);
+            })
+        </script>
 </body>
 
 </html>

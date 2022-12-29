@@ -1,9 +1,21 @@
 <!doctype html>
 <html lang="en">
 <style>
-    .history {
-        align-items: center;
-        text-align: center;
+    .back {
+        position: relative;
+        margin-top: 630px;
+        margin-left: 15px;
+    }
+
+    .main {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    html .col-3 {
+        background-color: #D9D9D9;
     }
 
     .form-req {
@@ -101,6 +113,47 @@
         padding: 0;
     }
 
+
+    .btn-outline-light {
+        color: #f8f9fa;
+        border-color: #f8f9fa;
+    }
+
+    .contain h5 {
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        margin-left: 20px;
+    }
+
+    .contain-1 h2 {
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        text-align: right;
+        padding-top: 50px;
+        margin-right: 20px;
+    }
+
+    .contain-1 h5 {
+        text-align: right;
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        margin-right: 20px;
+    }
+
+    a {
+        color: #007bff;
+        text-decoration: none;
+        background-color: transparent;
+    }
+
+    .contain h2 {
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        text-align: left;
+        padding-top: 50px;
+        margin-left: 20px;
+    }
+
     *,
     ::after,
     ::before {
@@ -166,35 +219,20 @@
 
         </nav>
 
-        <!-- INI AKHIR NAVBAR -->
-        <div class="bootstrap-iso ">
-            <div class="container-fluid">
-                <div class="row justify-content-center align-items-center" style="margin-top:100px; border:1px;">
-                    <div class="form-req col-md-4 col-sm-8 col-xs-12">
-                        <h3 style="text-align: center;">History Bimbingan</h3>
-                        <form action="#">
-                            <div class="form-group row" style="margin-top: 20px;">
-                                <label for="sem" class="col-sm-2 ">Semester</label>
-                                <div class="col-sm-10">
-                                    <select name="semester" id="sem">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="col-sm-10">
-                                    <button type="submit" class="btn btn-primary">Search</button>
-                                </div>
-                            </div>
-                        </form>
+        <div class="container-fluid" style="margin-top: 75px;">
+            <div class="row">
+                <div class="col-3 px-1 position-fixed" id="sticky-sidebar">
+                    <div class="nav flex-column flex-nowrap vh-100 overflow-auto text-white p-2">
+                        <h3 class="nav-link" style="color: black;">Info Kurikulum</h3>
+                        <a href="<?= base_url('home/kalenderakademik'); ?>" class="nav-link">Kalender Akademik</a>
+                        <a href="<?= base_url('home/kurikulummbkm'); ?>" class="nav-link">Kurikulum MBKM</a>
+                        <a href="<?= base_url('home/kurikulum1620'); ?>" class="nav-link">Kurikulum 2016-2020</a>
+                        <a href="<?= base_url('home/info'); ?>"><button class="nav-link back">Back</button></a>
                     </div>
+                </div>
+                <div class="col-9 offset-3" id="main">
+                    <img class="kalender1" src="<?= base_url('assets/img/bg/kalender1.png'); ?>" alt="" style="margin-bottom: 20px;">
+                    <img class="kalender2" src="<?= base_url('assets/img/bg/kalender2.png'); ?>" alt="">
                 </div>
             </div>
         </div>
@@ -239,17 +277,13 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
         <script>
-            $(document).ready(function() {
-                var date_input = $('input[name="date"]'); //our date input has the name "date"
-                var container = $('.bootstrap-iso form').length > 0 ? $('.bootstrap-iso form').parent() : "body";
-                var options = {
-                    format: 'mm/dd/yyyy',
-                    container: container,
-                    todayHighlight: true,
-                    autoclose: true,
-                };
-                date_input.datepicker(options);
-            })
+            function w3_open() {
+                document.getElementById("mySidebar").style.display = "block";
+            }
+
+            function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+            }
         </script>
 </body>
 
