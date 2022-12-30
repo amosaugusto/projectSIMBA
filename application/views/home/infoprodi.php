@@ -227,7 +227,7 @@
                         <a href="<?= base_url('home/kalenderakademik'); ?>" class="nav-link">Kalender Akademik</a>
                         <a href="<?= base_url('home/kurikulummbkm'); ?>" class="nav-link">Kurikulum MBKM</a>
                         <a href="<?= base_url('home/kurikulum1620'); ?>" class="nav-link">Kurikulum 2016-2020</a>
-                        <a href="<?= base_url('home/indexlogged'); ?>"><button class="nav-link back">Back Home</button></a>
+                        <a href="<?= base_url('home/indexprodi'); ?>"><button class="nav-link back">Back Home</button></a>
                     </div>
                 </div>
                 <div class="col-9 offset-3" id="main">

@@ -65,6 +65,22 @@ class Home extends CI_Controller
 
         $this->load->view('home/info', $data);
     }
+    public function infodos()
+    {
+        is_logged_in();
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+
+        $this->load->view('home/infodos', $data);
+    }
+    public function infoprodi()
+    {
+        is_logged_in();
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+
+        $this->load->view('home/infoprodi', $data);
+    }
     public function kalenderakademik()
     {
         is_logged_in();
@@ -96,6 +112,14 @@ class Home extends CI_Controller
 
 
         $this->load->view('home/report', $data);
+    }
+    public function hisprod()
+    {
+        is_logged_in();
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+
+        $this->load->view('home/hisprod', $data);
     }
     public function new()
     {

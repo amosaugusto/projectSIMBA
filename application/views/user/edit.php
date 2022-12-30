@@ -14,6 +14,18 @@
                 </div>
             </div>
             <div class="form-group row">
+                <label for="nomorinduk" class="col-sm-2 col-form-label">Nomor Induk</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="nomorinduk" name="nomorinduk" value="<?= $user['nomorinduk']; ?>" readonly>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="angkatan" class="col-sm-2 col-form-label">Angkatan</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="angkatan" name="angkatan" value="<?= $user['angkatan']; ?>" readonly>
+                </div>
+            </div>
+            <div class="form-group row">
                 <label for="name" class="col-sm-2 col-form-label">Full name</label>
                 <div class="col-sm-10">
                     <input type="text" class="form-control" id="name" name="name" value="<?= $user['name']; ?>">

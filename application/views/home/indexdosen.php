@@ -414,7 +414,7 @@
                             </a>
                         </div>
                         <div class="col-md-6">
-                            <a href="<?= base_url('home/info'); ?>">
+                            <a href="<?= base_url('home/infodos'); ?>">
                                 <div class="card-1">
                                     <img src="../assets/img/bg/info.png" class="card-img-top" alt="..." style="height: 100px; width: 100px;">
                                     <h5 class=" card-title m-1 ">Info Kurikulum</h5>

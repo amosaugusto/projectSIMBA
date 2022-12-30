@@ -244,6 +244,11 @@
                                     <button type="submit" class="btn btn-primary">Send Request</button>
                                 </div>
                             </div>
+                            <div class="form-group row">
+                                <div class="col-sm-6">
+                                    <a href="<?= base_url('home/indexlogged'); ?>">Back</a>
+                                </div>
+                            </div>
                         </form>
                     </div>
                 </div>

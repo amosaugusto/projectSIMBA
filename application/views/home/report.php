@@ -219,41 +219,48 @@
                             <div class="container-fluid">
                                 <div class="row justify-content-center align-items-center" style="margin-top:100px; border:1px;">
                                     <div class="form-req col-md-6 col-sm-6 col-xs-12">
-                                        <h3 style="text-align: center;">Request Bimbingan</h3>
+                                        <h3 style="text-align: center;">Report Rekap Bimbingan Dosen</h3>
                                         <form>
                                             <div class="form-group row" style="margin-top: 20px;">
-                                                <label for="inputNama3" class="col-sm-2 col-form-label">Nama</label>
+                                                <label for="inputNamaDos" class="col-sm-2 col-form-label">Nama Dosen</label>
                                                 <div class="col-sm-10">
-                                                    <input type="text" class="form-control" id="inputNama3" placeholder="Nama">
+                                                    <input type="text" class="form-control" id="inputNamaDos" placeholder="Nama Dosen">
                                                 </div>
                                             </div>
                                             <div class="form-group row">
-                                                <label for="inputNIM3" class="col-sm-2 col-form-label">NIM</label>
+                                                <label for="inputNIK" class="col-sm-2 col-form-label">NIK</label>
                                                 <div class="col-sm-10">
-                                                    <input type="text" class="form-control" id="inputNIM3" placeholder="NIM">
+                                                    <input type="text" class="form-control" id="inputNIK" placeholder="NIK">
                                                 </div>
                                             </div>
                                             <div class="form-group row">
-                                                <!-- Date input -->
-                                                <label class="col-sm-2 col-form-label" for="date">Date</label>
-                                                <input class="form-control col-sm-10" id="date" name="date" placeholder="MM/DD/YYY" type="text" />
-                                            </div>
-                                            <div class="form-group row">
-                                                <label for="inputTopik3" class="col-sm-2 col-form-label">Topik Bahasan</label>
+                                                <label for="inputJumlah" class="col-sm-2 col-form-label">Jumlah Bimbingan</label>
                                                 <div class="col-sm-10">
-                                                    <input type="text" class="form-control" id="inputTopik3" placeholder="Topik">
+                                                    <input type="text" class="form-control" id="inputJumlah" placeholder="Jumlah Bimbingan">
                                                 </div>
                                             </div>
                                             <div class="form-group row">
-                                                <label for="inputDosen3" class="col-sm-2 col-form-label">Dosen Pembimbing</label>
+                                                <label for="inputNamaMhs" class="col-sm-2 col-form-label">Nama Mahasiswa</label>
                                                 <div class="col-sm-10">
-                                                    <input type="text" class="form-control" id="inputDosen3" placeholder="Dosen">
+                                                    <input type="text" class="form-control" id="inputNamaMhs" placeholder="Nama Mahasiswa">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputNIM" class="col-sm-2 col-form-label">NIM</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="inputNIM" placeholder="NIM">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputTahun" class="col-sm-2 col-form-label">Tahun Angkatan</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="inputTahun" placeholder="Tahun Angkatan">
                                                 </div>
                                             </div>
 
                                             <div class="form-group row">
                                                 <div class="col-sm-10">
-                                                    <button type="submit" class="btn btn-primary">Send Request</button>
+                                                    <button type="submit" class="btn btn-primary">Submit</button>
                                                 </div>
                                             </div>
                                         </form>
@@ -262,10 +269,178 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
-                    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
-                    <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                        <div class="bootstrap-iso ">
+                            <div class="container-fluid">
+                                <div class="row justify-content-center align-items-center" style="margin-top:100px; border:1px;">
+                                    <div class="form-req col-md-6 col-sm-6 col-xs-12">
+                                        <h3 style="text-align: center;">Report Rekap Bimbingan Dosen</h3>
+                                        <form>
+                                            <div class="form-group row" style="margin-top: 20px;">
+                                                <label for="inputNamaDos" class="col-sm-2 col-form-label">Nama Dosen</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="inputNamaDos" placeholder="Nama Dosen">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputNIK" class="col-sm-2 col-form-label">NIK</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="inputNIK" placeholder="NIK">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputJumlah" class="col-sm-2 col-form-label">Jumlah Bimbingan</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="inputJumlah" placeholder="Jumlah Bimbingan">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputNamaMhs" class="col-sm-2 col-form-label">Nama Mahasiswa</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="inputNamaMhs" placeholder="Nama Mahasiswa">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputNIM" class="col-sm-2 col-form-label">NIM</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="inputNIM" placeholder="NIM">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputTahun" class="col-sm-2 col-form-label">Tahun Angkatan</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="inputTahun" placeholder="Tahun Angkatan">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <div class="col-sm-10">
+                                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                        <div class="bootstrap-iso ">
+                            <div class="container-fluid">
+                                <div class="row justify-content-center align-items-center" style="margin-top:100px; border:1px;">
+                                    <div class="form-req col-md-6 col-sm-6 col-xs-12">
+                                        <h3 style="text-align: center;">Report Rekap Bimbingan Dosen</h3>
+                                        <form>
+                                            <div class="form-group row" style="margin-top: 20px;">
+                                                <label for="inputNamaDos" class="col-sm-2 col-form-label">Nama Dosen</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="inputNamaDos" placeholder="Nama Dosen">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputNIK" class="col-sm-2 col-form-label">NIK</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="inputNIK" placeholder="NIK">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputJumlah" class="col-sm-2 col-form-label">Jumlah Bimbingan</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="inputJumlah" placeholder="Jumlah Bimbingan">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputNamaMhs" class="col-sm-2 col-form-label">Nama Mahasiswa</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="inputNamaMhs" placeholder="Nama Mahasiswa">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputNIM" class="col-sm-2 col-form-label">NIM</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="inputNIM" placeholder="NIM">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputTahun" class="col-sm-2 col-form-label">Tahun Angkatan</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="inputTahun" placeholder="Tahun Angkatan">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <div class="col-sm-10">
+                                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                        <div class="bootstrap-iso ">
+                            <div class="container-fluid">
+                                <div class="row justify-content-center align-items-center" style="margin-top:100px; border:1px;">
+                                    <div class="form-req col-md-6 col-sm-6 col-xs-12">
+                                        <h3 style="text-align: center;">Report Rekap Bimbingan Dosen</h3>
+                                        <form>
+                                            <div class="form-group row" style="margin-top: 20px;">
+                                                <label for="inputNamaDos" class="col-sm-2 col-form-label">Nama Dosen</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="inputNamaDos" placeholder="Nama Dosen">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputNIK" class="col-sm-2 col-form-label">NIK</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="inputNIK" placeholder="NIK">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputJumlah" class="col-sm-2 col-form-label">Jumlah Bimbingan</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="inputJumlah" placeholder="Jumlah Bimbingan">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputNamaMhs" class="col-sm-2 col-form-label">Nama Mahasiswa</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="inputNamaMhs" placeholder="Nama Mahasiswa">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputNIM" class="col-sm-2 col-form-label">NIM</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="inputNIM" placeholder="NIM">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputTahun" class="col-sm-2 col-form-label">Tahun Angkatan</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="inputTahun" placeholder="Tahun Angkatan">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <div class="col-sm-10">
+                                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+
+        </div>
+        <div>
+            <div>
+                <a href="<?= base_url('home/indexprodi'); ?>">Back</a>
             </div>
         </div>
 
@@ -309,19 +484,6 @@
         <!-- Bootstrap Date-Picker Plugin -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
-        <script>
-            $(document).ready(function() {
-                var date_input = $('input[name="date"]'); //our date input has the name "date"
-                var container = $('.bootstrap-iso form').length > 0 ? $('.bootstrap-iso form').parent() : "body";
-                var options = {
-                    format: 'mm/dd/yyyy',
-                    container: container,
-                    todayHighlight: true,
-                    autoclose: true,
-                };
-                date_input.datepicker(options);
-            })
-        </script>
 </body>
 
 </html>

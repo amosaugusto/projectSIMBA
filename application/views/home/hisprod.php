@@ -1,23 +1,6 @@
 <!doctype html>
 <html lang="en">
 <style>
-    .back {
-        position: relative;
-        margin-top: 630px;
-        margin-left: 15px;
-    }
-
-    .main {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-    }
-
-    html .col-3 {
-        background-color: #D9D9D9;
-    }
-
     .form-req {
         border: 1px solid black;
         box-shadow: 3px;
@@ -219,19 +202,42 @@
 
         </nav>
 
-        <div class="container-fluid" style="margin-top: 75px;">
-            <div class="row">
-                <div class="col-3 px-1 position-fixed" id="sticky-sidebar">
-                    <div class="nav flex-column flex-nowrap vh-100 overflow-auto text-white p-2">
-                        <h3 class="nav-link" style="color: black;">Info Kurikulum</h3>
-                        <a href="<?= base_url('home/kalenderakademik'); ?>" class="nav-link">Kalender Akademik</a>
-                        <a href="<?= base_url('home/kurikulummbkm'); ?>" class="nav-link">Kurikulum MBKM</a>
-                        <a href="<?= base_url('home/kurikulum1620'); ?>" class="nav-link">Kurikulum 2016-2020</a>
-                        <a href="<?= base_url('home/indexlogged'); ?>"><button class="nav-link back">Back Home</button></a>
-                    </div>
-                </div>
-                <div class="col-9 offset-3" id="main">
+        <!-- INI AKHIR NAVBAR -->
+        <div class="bootstrap-iso ">
+            <div class="container-fluid">
+                <div class="row justify-content-center align-items-center" style="margin-top:100px; border:1px;">
+                    <div class="form-req col-md-6 col-sm-6 col-xs-12">
+                        <h3 style="text-align: center;">History Mahasiswa Bimbingan</h3>
+                        <form>
+                            <div class="form-group row" style="margin-top: 20px;">
+                                <label for="inputNamaDos" class="col-sm-2 col-form-label">Nama Dosen</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="inputNamaDos" placeholder="Nama Dosen">
+                                </div>
+                            </div>
+                        </form>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Nama</th>
+                                    <th scope="col">NIM</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Angkatan</th>
+                                    <th scope="col">Jumlah Bimbingan</th>
+                                </tr>
+                            </thead>
+                            <tbody>
 
+                            </tbody>
+                        </table>
+
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <a href="<?= base_url('home/indexprodi'); ?>">Back</a>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -275,15 +281,6 @@
         <!-- Bootstrap Date-Picker Plugin -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
-        <script>
-            function w3_open() {
-                document.getElementById("mySidebar").style.display = "block";
-            }
-
-            function w3_close() {
-                document.getElementById("mySidebar").style.display = "none";
-            }
-        </script>
 </body>
 
 </html>
