@@ -189,9 +189,7 @@
                                 <img src="<?= base_url('assets/img/profile/') . $user['image']; ?>" width="50" height="50" class="rounded-circle ">
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="<?= base_url('home/indexlogged'); ?>">Home</a>
-                                <a class="dropdown-item" href="<?= base_url('home/tips'); ?>">Tips</a>
-                                <a class="dropdown-item" href="<?= base_url('home/experience'); ?>">Experience</a>
+                                <a class="dropdown-item" href="<?= base_url('home/indexprodi'); ?>">Home</a>
                                 <a class="dropdown-item" href="<?= base_url('auth'); ?>">Profile</a>
                                 <a class="dropdown-item" href="<?= base_url('auth/logout'); ?>" data-toggle="modal" data-target="#logoutModal">Log Out</a>
                             </div>

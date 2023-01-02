@@ -206,9 +206,7 @@
                                 <img src="<?= base_url('assets/img/profile/') . $user['image']; ?>" width="50" height="50" class="rounded-circle ">
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="<?= base_url('home/indexlogged'); ?>">Home</a>
-                                <a class="dropdown-item" href="<?= base_url('home/tips'); ?>">Tips</a>
-                                <a class="dropdown-item" href="<?= base_url('home/experience'); ?>">Experience</a>
+                                <a class="dropdown-item" href="<?= base_url('home/indexprodi'); ?>">Home</a>
                                 <a class="dropdown-item" href="<?= base_url('auth'); ?>">Profile</a>
                                 <a class="dropdown-item" href="<?= base_url('auth/logout'); ?>" data-toggle="modal" data-target="#logoutModal">Log Out</a>
                             </div>
@@ -223,17 +221,21 @@
             <div class="row">
                 <div class="col-3 px-1 position-fixed" id="sticky-sidebar">
                     <div class="nav flex-column flex-nowrap vh-100 overflow-auto text-white p-2">
-                        <h3 class="nav-link" style="color: black;">Info Kurikulum</h3>
-                        <a href="<?= base_url('home/kalenderakademik'); ?>" class="nav-link">Kalender Akademik</a>
-                        <a href="<?= base_url('home/kurikulummbkm'); ?>" class="nav-link">Kurikulum MBKM</a>
-                        <a href="<?= base_url('home/kurikulum1620'); ?>" class="nav-link">Kurikulum 2016-2020</a>
-                        <a href="<?= base_url('home/indexprodi'); ?>"><button class="nav-link back">Back Home</button></a>
+                        <a href="<?= base_url('home/infoprodi'); ?>">
+                            <h3 class="nav-link" style="color: black;">Info Kurikulum</h3>
+                        </a>
+                        <a href="<?= base_url('home/kalenderakademikprod'); ?>" class="nav-link">Kalender Akademik</a>
+                        <a href="<?= base_url('home/kurikulummbkmprod'); ?>" class="nav-link">Kurikulum MBKM</a>
+                        <a href="<?= base_url('home/kurikulum1620prod'); ?>" class="nav-link">Kurikulum 2016-2020</a>
+
                     </div>
                 </div>
                 <div class="col-9 offset-3" id="main">
 
                 </div>
+
             </div>
+            <a href="<?= base_url('home/indexprodi'); ?>"><button class="nav-link back">Back Home</button></a>
         </div>
 
 

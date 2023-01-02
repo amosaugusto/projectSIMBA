@@ -105,6 +105,54 @@ class Home extends CI_Controller
 
         $this->load->view('home/kurikulum1620', $data);
     }
+    public function kalenderakademikdos()
+    {
+        is_logged_in();
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+
+        $this->load->view('home/kalenderakademikdos', $data);
+    }
+    public function kurikulummbkmdos()
+    {
+        is_logged_in();
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+
+        $this->load->view('home/kurikulummbkmdos', $data);
+    }
+    public function kurikulum1620dos()
+    {
+        is_logged_in();
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+
+        $this->load->view('home/kurikulum1620dos', $data);
+    }
+    public function kalenderakademikprod()
+    {
+        is_logged_in();
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+
+        $this->load->view('home/kalenderakademikprod', $data);
+    }
+    public function kurikulummbkmprod()
+    {
+        is_logged_in();
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+
+        $this->load->view('home/kurikulummbkmprod', $data);
+    }
+    public function kurikulum1620prod()
+    {
+        is_logged_in();
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+
+        $this->load->view('home/kurikulum1620prod', $data);
+    }
     public function report()
     {
         is_logged_in();

@@ -1,6 +1,23 @@
 <!doctype html>
 <html lang="en">
 <style>
+    .back {
+        position: relative;
+        margin-top: 630px;
+        margin-left: 15px;
+    }
+
+    .main {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    html .col-3 {
+        background-color: #D9D9D9;
+    }
+
     .form-req {
         border: 1px solid black;
         box-shadow: 3px;
@@ -189,7 +206,7 @@
                                 <img src="<?= base_url('assets/img/profile/') . $user['image']; ?>" width="50" height="50" class="rounded-circle ">
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="<?= base_url('home/indexdosen'); ?>">Home</a>
+                                <a class="dropdown-item" href="<?= base_url('home/indexprodi'); ?>">Home</a>
                                 <a class="dropdown-item" href="<?= base_url('auth'); ?>">Profile</a>
                                 <a class="dropdown-item" href="<?= base_url('auth/logout'); ?>" data-toggle="modal" data-target="#logoutModal">Log Out</a>
                             </div>
@@ -200,71 +217,20 @@
 
         </nav>
 
-        <!-- INI AKHIR NAVBAR -->
-        <div class="bootstrap-iso ">
-            <div class="container-fluid">
-                <div class="row justify-content-center align-items-center" style="margin-top:100px; border:1px;">
-                    <div class="form-req col-md-6 col-sm-6 col-xs-12">
-                        <h3 style="text-align: center;">Pencatatan Bimbingan</h3>
-                        <form>
-                            <div class="form-group row" style="margin-top: 20px;">
-                                <label for="inputJenis" class="col-sm-2 col-form-label">Jenis Bimbingan</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputJenis" placeholder="Jenis Bimbingan">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="inputLokasi" class="col-sm-2 col-form-label">Lokasi (Apabila Onsite)</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputLokasi" placeholder="NIM">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="inputLink" class="col-sm-2 col-form-label">Link Bimbingan (Apabila Online)</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputLink" placeholder="Link">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <!-- Date input -->
-                                <label class="col-sm-2 col-form-label" for="date">Date</label>
-                                <input class="form-control col-sm-10" id="date" name="date" placeholder="MM/DD/YYY" type="text" />
-                            </div>
-                            <div class="form-group row">
-                                <label for="inputTopik" class="col-sm-2 col-form-label">Topik yang dibahas</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputTopik" placeholder="Topik">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="inputFeedback" class="col-sm-2 col-form-label">Feedback Dosen</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputFeedback" placeholder="Feedback">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="inputAngkatan" class="col-sm-2 col-form-label">Angkatan</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputAngkatan" placeholder="Angkatan">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="inputMahasiswa" class="col-sm-2 col-form-label">List Mahasiswa</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputMahasiswa" placeholder="Mahasiswa">
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <div class="col-sm-6">
-                                    <a href="<?= base_url('home/indexdosen'); ?>">Back</a>
-                                </div>
-                                <div class="col-sm-6">
-                                    <button type="submit" class="btn btn-primary">Send Request</button>
-                                </div>
-                            </div>
-                        </form>
+        <div class="container-fluid" style="margin-top: 75px;">
+            <div class="row">
+                <div class="col-3 px-1 position-fixed" id="sticky-sidebar">
+                    <div class="nav flex-column flex-nowrap vh-100 overflow-auto text-white p-2">
+                        <h3 class="nav-link" style="color: black;">Info Kurikulum</h3>
+                        <a href="<?= base_url('home/kalenderakademikprod'); ?>" class="nav-link">Kalender Akademik</a>
+                        <a href="<?= base_url('home/kurikulummbkmprod'); ?>" class="nav-link">Kurikulum MBKM</a>
+                        <a href="<?= base_url('home/kurikulum1620prod'); ?>" class="nav-link">Kurikulum 2016-2020</a>
+                        <a href="<?= base_url('home/infoprodi'); ?>"><button class="nav-link back">Back</button></a>
                     </div>
+                </div>
+                <div class="col-9 offset-3" id="main">
+                    <img class="kalender1" src="<?= base_url('assets/img/bg/kalender1.png'); ?>" alt="" style="margin-bottom: 20px;">
+                    <img class="kalender2" src="<?= base_url('assets/img/bg/kalender2.png'); ?>" alt="">
                 </div>
             </div>
         </div>
@@ -309,17 +275,13 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
         <script>
-            $(document).ready(function() {
-                var date_input = $('input[name="date"]'); //our date input has the name "date"
-                var container = $('.bootstrap-iso form').length > 0 ? $('.bootstrap-iso form').parent() : "body";
-                var options = {
-                    format: 'mm/dd/yyyy',
-                    container: container,
-                    todayHighlight: true,
-                    autoclose: true,
-                };
-                date_input.datepicker(options);
-            })
+            function w3_open() {
+                document.getElementById("mySidebar").style.display = "block";
+            }
+
+            function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+            }
         </script>
 </body>
 
