@@ -184,7 +184,7 @@ class Home extends CI_Controller
         is_logged_in();
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
-
+        $data['catatan'] = $this->m_bimbingan->tampil_catatan()->result();
         $this->load->view('home/hisprod', $data);
     }
     public function new()
@@ -278,7 +278,7 @@ class Home extends CI_Controller
         is_logged_in();
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
-
+        $data['catatan'] = $this->m_bimbingan->tampil_catatan()->result();
         $this->load->view('home/hisdos', $data);
     }
 }

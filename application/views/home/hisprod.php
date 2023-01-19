@@ -217,16 +217,40 @@
                         <table class="table table-hover">
                             <thead>
                                 <tr>
-                                    <th scope="col">Nama</th>
-                                    <th scope="col">NIM</th>
-                                    <th scope="col">Email</th>
+                                    <th scope="col">No</th>
+                                    <th scope="col">Jenis</th>
+                                    <th scope="col">Lokasi</th>
+                                    <th scope="col">Link</th>
+                                    <th scope="col">Tanggal Bimbingan</th>
+                                    <th scope="col">Topik Bahasan</th>
+                                    <th scope="col">Feedback Dosen</th>
                                     <th scope="col">Angkatan</th>
-                                    <th scope="col">Jumlah Bimbingan</th>
+                                    <th scope="col">Mahasiswa</th>
+                                    <th scope="col">Detail</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <?php
+                            $no = 1;
+                            foreach ($catatan as $cat) :
+                            ?>
+                                <tbody>
+                                    <tr>
+                                        <td scope="col"><?php echo $no++ ?></td>
+                                        <td scope="col"><?php echo $cat->jenis ?></td>
+                                        <td scope="col"><?php echo $cat->lokasi ?></td>
+                                        <td scope="col"><?php echo $cat->link ?></td>
+                                        <td scope="col"><?php echo $cat->tgl_bimbingan ?></td>
+                                        <td scope="col"><?php echo $cat->topik ?></td>
+                                        <td scope="col"><?php echo $cat->feedback ?></td>
+                                        <td scope="col"><?php echo $cat->angkatan ?></td>
+                                        <td scope="col"><?php echo $cat->mahasiswa ?></td>
+                                        <td>
+                                            <button>Lihat Detail</button>
 
-                            </tbody>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            <?php endforeach; ?>
                         </table>
 
                         <div class="form-group row">
