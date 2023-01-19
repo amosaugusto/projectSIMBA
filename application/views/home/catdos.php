@@ -206,52 +206,63 @@
                 <div class="row justify-content-center align-items-center" style="margin-top:100px; border:1px;">
                     <div class="form-req col-md-6 col-sm-6 col-xs-12">
                         <h3 style="text-align: center;">Pencatatan Bimbingan</h3>
-                        <form>
+                        <form action="<?= base_url('home/tambahcatat'); ?>" method="post">
                             <div class="form-group row" style="margin-top: 20px;">
-                                <label for="inputJenis" class="col-sm-2 col-form-label">Jenis Bimbingan</label>
+                                <label class="col-sm-2 col-form-label">Jenis Bimbingan</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputJenis" placeholder="Jenis Bimbingan">
+                                    <select class="form-control" name="jenis">
+                                        <option value="online">Online</option>
+                                        <option value="offline">Offline</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="inputLokasi" class="col-sm-2 col-form-label">Lokasi (Apabila Onsite)</label>
+                                <label class="col-sm-2 col-form-label">Lokasi (Apabila Onsite)</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputLokasi" placeholder="NIM">
+                                    <input type="text" class="form-control" name="lokasi" placeholder="Lokasi">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="inputLink" class="col-sm-2 col-form-label">Link Bimbingan (Apabila Online)</label>
+                                <label class="col-sm-2 col-form-label">Link Bimbingan (Apabila Online)</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputLink" placeholder="Link">
+                                    <input type="text" class="form-control" name="link" placeholder="Link">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <!-- Date input -->
-                                <label class="col-sm-2 col-form-label" for="date">Date</label>
-                                <input class="form-control col-sm-10" id="date" name="date" placeholder="MM/DD/YYY" type="text" />
+                                <label class="col-sm-2 col-form-label">Tanggal Bimbingan</label>
+                                <input class="form-control col-sm-10" name="tgl_bimbingan" placeholder="DD/MM/YYY" type="date" />
                             </div>
                             <div class="form-group row">
-                                <label for="inputTopik" class="col-sm-2 col-form-label">Topik yang dibahas</label>
+                                <label class="col-sm-2 col-form-label">Topik yang dibahas</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputTopik" placeholder="Topik">
+                                    <input type="text" class="form-control" name="topik" placeholder="Topik">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="inputFeedback" class="col-sm-2 col-form-label">Feedback Dosen</label>
+                                <label class="col-sm-2 col-form-label">Feedback Dosen</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputFeedback" placeholder="Feedback">
+                                    <input type="text" class="form-control" name="feedback" placeholder="Feedback">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="inputAngkatan" class="col-sm-2 col-form-label">Angkatan</label>
+                                <label class="col-sm-2 col-form-label">Angkatan</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputAngkatan" placeholder="Angkatan">
+                                    <select class="form-control" name="angkatan">
+                                        <option value="2016">2016</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2018">2018</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2022">2022</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="inputMahasiswa" class="col-sm-2 col-form-label">List Mahasiswa</label>
+                                <label class="col-sm-2 col-form-label">Mahasiswa Bimbingan</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputMahasiswa" placeholder="Mahasiswa">
+                                    <input type="text" class="form-control" name="mahasiswa" placeholder="Mahasiswa">
                                 </div>
                             </div>
 

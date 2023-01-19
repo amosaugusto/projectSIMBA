@@ -168,35 +168,51 @@
         <div class="bootstrap-iso ">
             <div class="container-fluid">
                 <div class="row justify-content-center align-items-center" style="margin-top:100px; border:1px;">
-                    <div class="form-req col-md-4 col-sm-8 col-xs-12">
+                    <div class="form-req col-md-6 col-sm-6 col-xs-12">
                         <h3 style="text-align: center;">History Bimbingan</h3>
-                        <form action="#">
-                            <div class="form-group row" style="margin-top: 20px;">
-                                <label for="sem" class="col-sm-2 ">Semester</label>
-                                <div class="col-sm-10">
-                                    <select name="semester" id="sem">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                    </select>
-                                </div>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">No</th>
+                                    <th scope="col">Jenis</th>
+                                    <th scope="col">Lokasi</th>
+                                    <th scope="col">Link</th>
+                                    <th scope="col">Tanggal Bimbingan</th>
+                                    <th scope="col">Topik Bahasan</th>
+                                    <th scope="col">Feedback Dosen</th>
+                                    <th scope="col">Angkatan</th>
+                                    <th scope="col">Mahasiswa</th>
+                                    <th scope="col">Detail</th>
+                                </tr>
+                            </thead>
+                            <?php
+                            $no = 1;
+                            foreach ($catatan as $cat) :
+                            ?>
+                                <tbody>
+                                    <tr>
+                                        <td scope="col"><?php echo $no++ ?></td>
+                                        <td scope="col"><?php echo $cat->jenis ?></td>
+                                        <td scope="col"><?php echo $cat->lokasi ?></td>
+                                        <td scope="col"><?php echo $cat->link ?></td>
+                                        <td scope="col"><?php echo $cat->tgl_bimbingan ?></td>
+                                        <td scope="col"><?php echo $cat->topik ?></td>
+                                        <td scope="col"><?php echo $cat->feedback ?></td>
+                                        <td scope="col"><?php echo $cat->angkatan ?></td>
+                                        <td scope="col"><?php echo $cat->mahasiswa ?></td>
+                                        <td>
+                                            <button>Lihat Detail</button>
+
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            <?php endforeach; ?>
+                        </table>
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <a href="<?= base_url('home/indexlogged'); ?>">Back</a>
                             </div>
-                            <div class="form-group row">
-                                <div class="col-sm-10">
-                                    <button type="submit" class="btn btn-primary">Search</button>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="col-sm-6">
-                                    <a href="<?= base_url('home/indexlogged'); ?>">Back</a>
-                                </div>
-                            </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>

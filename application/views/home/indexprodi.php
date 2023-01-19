@@ -23,7 +23,7 @@
         font-weight: 600;
         font-size: .8rem;
         letter-spacing: .1rem;
-        background: rgba(0, 0, 0, 0.8) !important;
+        background: rgba(255, 255, 255, 1) !important;
     }
 
     .navbar-dark .navbar-brand {
@@ -336,7 +336,7 @@
                 <div class="icon">
                     <ul class="navbar-nav">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" style="color: black;" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class=" mr-2 d-none d-lg-inline text-gray-600 small"><?= $user['name']; ?></span>
                                 <img src="<?= base_url('assets/img/profile/') . $user['image']; ?>" width="50" height="50" class="rounded-circle ">
                             </a>
@@ -378,7 +378,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-3">
-                            <a href="<?= base_url('home/report'); ?>">
+                            <a href="<?= base_url('error/index'); ?>">
                                 <div class="card-1">
                                     <img src="../assets/img/bg/report.png" class="card-img-top" alt="..." style="height: 100px; width: 100px;">
                                     <h5 class="card-title m-1">Report Rekap Bimbingan Dosen</h5>
@@ -394,7 +394,7 @@
                             </a>
                         </div>
                         <div class=" col-md-3">
-                            <a href="<?= base_url('home/infoprodi'); ?>">
+                            <a href="<?= base_url('error/index'); ?>">
                                 <div class="card-1">
                                     <img src="../assets/img/bg/persentase.png" class="card-img-top" alt="..." style="height: 100px; width: 100px;">
                                     <h5 class=" card-title m-1 ">Persentase Bimbingan</h5>

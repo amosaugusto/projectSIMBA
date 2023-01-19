@@ -205,7 +205,7 @@
             <div class="container-fluid">
                 <div class="row justify-content-center align-items-center" style="margin-top:100px; border:1px;">
                     <div class="form-req col-md-6 col-sm-6 col-xs-12">
-                        <h3 style="text-align: center;">Pencatatan Bimbingan</h3>
+                        <h3 style="text-align: center;">History Mahasiswa Bimbingan</h3>
                         <table class="table table-hover">
                             <thead>
                                 <tr>

@@ -23,7 +23,7 @@
         font-weight: 600;
         font-size: .8rem;
         letter-spacing: .1rem;
-        background: rgba(0, 0, 0, 0.8) !important;
+        background: rgba(255, 255, 255, 1) !important;
     }
 
     .navbar-dark .navbar-brand {
@@ -324,7 +324,7 @@
 <body>
     <div class="cover" data-stellar-background-ratio="0.5">
         <!-- INI NAVBAR -->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
             <a class="navbar-brand font-weight-bold" href="#" style="font-size: 18px;">
                 <img src="<?= base_url('assets/img/bg/simbalogo.png'); ?>" width="100" height="50" alt="logo">
                 <img src="<?= base_url('assets/img/bg/prodisi.png'); ?>" width="200" height="50" alt="logo" style="margin-left: 20px">

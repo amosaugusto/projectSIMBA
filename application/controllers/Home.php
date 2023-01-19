@@ -47,13 +47,31 @@ class Home extends CI_Controller
 
         $this->load->view('home/request', $data);
     }
+    public function tambah()
+    {
+        $nama = $this->input->post('nama');
+        $nim = $this->input->post('nim');
+        $tgl_bimbingan = $this->input->post('tgl_bimbingan');
+        $topik = $this->input->post('topik');
+        $dospem = $this->input->post('dospem');
+
+        $data = array(
+            'nama' => $nama,
+            'nim' => $nim,
+            'tgl_bimbingan' => $tgl_bimbingan,
+            'topik' => $topik,
+            'dospem' => $dospem,
+        );
+        $this->m_bimbingan->input_data($data, 'tb_bimbingan');
+        redirect('home/request');
+    }
 
     public function history()
     {
         is_logged_in();
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
-
+        $data['catatan'] = $this->m_bimbingan->tampil_catatan()->result();
         $this->load->view('home/history', $data);
     }
 
@@ -190,15 +208,37 @@ class Home extends CI_Controller
         is_logged_in();
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
-
         $this->load->view('home/newindividu', $data);
     }
+    public function tambahindividu()
+    {
+        $jenis = $this->input->post('jenis');
+        $lokasi = $this->input->post('lokasi');
+        $link = $this->input->post('link');
+        $tgl_bimbingan = $this->input->post('tgl_bimbingan');
+        $dospem = $this->input->post('dospem');
+        $angkatan = $this->input->post('angkatan');
+        $mahasiswa = $this->input->post('mahasiswa');
+
+        $data = array(
+            'jenis' => $jenis,
+            'lokasi' => $lokasi,
+            'link' => $link,
+            'tgl_bimbingan' => $tgl_bimbingan,
+            'dospem' => $dospem,
+            'angkatan' => $angkatan,
+            'mahasiswa' => $mahasiswa,
+        );
+        $this->m_bimbingan->input_dataindividu($data, 'tb_buatjadwal');
+        redirect('home/newindividu');
+    }
+
     public function approval()
     {
         is_logged_in();
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
-
+        $data['bimbingan'] = $this->m_bimbingan->tampil_data()->result();
         $this->load->view('home/approval', $data);
     }
     public function catdos()
@@ -208,6 +248,30 @@ class Home extends CI_Controller
 
 
         $this->load->view('home/catdos', $data);
+    }
+    public function tambahcatat()
+    {
+        $jenis = $this->input->post('jenis');
+        $lokasi = $this->input->post('lokasi');
+        $link = $this->input->post('link');
+        $tgl_bimbingan = $this->input->post('tgl_bimbingan');
+        $topik = $this->input->post('topik');
+        $feedback = $this->input->post('feedback');
+        $angkatan = $this->input->post('angkatan');
+        $mahasiswa = $this->input->post('mahasiswa');
+
+        $data = array(
+            'jenis' => $jenis,
+            'lokasi' => $lokasi,
+            'link' => $link,
+            'tgl_bimbingan' => $tgl_bimbingan,
+            'topik' => $topik,
+            'feedback' => $feedback,
+            'angkatan' => $angkatan,
+            'mahasiswa' => $mahasiswa,
+        );
+        $this->m_bimbingan->input_catatan($data, 'tb_catat');
+        redirect('home/catdos');
     }
     public function hisdos()
     {

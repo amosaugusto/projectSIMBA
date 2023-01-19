@@ -206,34 +206,34 @@
                 <div class="row justify-content-center align-items-center" style="margin-top:100px; border:1px;">
                     <div class="form-req col-md-6 col-sm-6 col-xs-12">
                         <h3 style="text-align: center;">Request Bimbingan</h3>
-                        <form>
+                        <form action="<?= base_url('home/tambah'); ?>" method="post">
                             <div class="form-group row" style="margin-top: 20px;">
-                                <label for="inputNama3" class="col-sm-2 col-form-label">Nama</label>
+                                <label class="col-sm-2 col-form-label">Nama</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputNama3" placeholder="Nama">
+                                    <input type="text" class="form-control" name="nama" placeholder="Nama">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="inputNIM3" class="col-sm-2 col-form-label">NIM</label>
+                                <label class="col-sm-2 col-form-label">NIM</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputNIM3" placeholder="NIM">
+                                    <input type="text" class="form-control" name="nim" placeholder="NIM">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <!-- Date input -->
-                                <label class="col-sm-2 col-form-label" for="date">Date</label>
-                                <input class="form-control col-sm-10" id="date" name="date" placeholder="MM/DD/YYY" type="text" />
+                                <label class="col-sm-2 col-form-label">Tanggal Bimbingan</label>
+                                <input class="form-control col-sm-10" name="tgl_bimbingan" placeholder="DD/MM/YYY" type="date" />
                             </div>
                             <div class="form-group row">
-                                <label for="inputTopik3" class="col-sm-2 col-form-label">Topik Bahasan</label>
+                                <label class="col-sm-2 col-form-label">Topik Bahasan</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputTopik3" placeholder="Topik">
+                                    <input type="text" class="form-control" name="topik" placeholder="Topik">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="inputDosen3" class="col-sm-2 col-form-label">Dosen Pembimbing</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputDosen3" placeholder="Dosen">
+                                    <input type="text" class="form-control" name="dospem" placeholder="Dosen">
                                 </div>
                             </div>
 

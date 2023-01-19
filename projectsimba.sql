@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 02, 2023 at 06:43 AM
+-- Generation Time: Jan 19, 2023 at 05:18 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 7.4.24
 
@@ -20,6 +20,86 @@ SET time_zone = "+00:00";
 --
 -- Database: `projectsimba`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_bimbingan`
+--
+
+CREATE TABLE `tb_bimbingan` (
+  `id` int(11) NOT NULL,
+  `nama` varchar(120) NOT NULL,
+  `nim` varchar(120) NOT NULL,
+  `tgl_bimbingan` date NOT NULL,
+  `topik` varchar(256) NOT NULL,
+  `dospem` varchar(120) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tb_bimbingan`
+--
+
+INSERT INTO `tb_bimbingan` (`id`, `nama`, `nim`, `tgl_bimbingan`, `topik`, `dospem`) VALUES
+(1, 'Anros Monica Hutagalung', '00000034848', '2023-01-20', 'Menyusun rencana studi untuk semester 5', 'Rudi Sutomo'),
+(4, 'Amos Augusto Silangit', '09021281924051', '2023-01-25', 'Cara bermain valorant dengan baik', 'Abdiansah'),
+(5, 'Josie GF Purba', '09021281924090', '2023-02-15', 'Bimbingan Akademik', 'Rudi Sutomo'),
+(6, 'monica', '00000034848', '2023-01-20', 'revisi laporan', 'Rudi Sutomo');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_buatjadwal`
+--
+
+CREATE TABLE `tb_buatjadwal` (
+  `id` int(11) NOT NULL,
+  `jenis` varchar(120) NOT NULL,
+  `lokasi` varchar(120) NOT NULL,
+  `link` varchar(120) NOT NULL,
+  `tgl_bimbingan` date NOT NULL,
+  `dospem` varchar(120) NOT NULL,
+  `angkatan` int(11) NOT NULL,
+  `mahasiswa` varchar(120) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tb_buatjadwal`
+--
+
+INSERT INTO `tb_buatjadwal` (`id`, `jenis`, `lokasi`, `link`, `tgl_bimbingan`, `dospem`, `angkatan`, `mahasiswa`) VALUES
+(3, 'online', 'UMN ruang 1', '-', '2023-01-31', 'Abdiansah', 2019, 'Anros Monica Hutagalung'),
+(4, 'offline', '-', 'https://www.w3.org/Provider/Style/dummy.html', '0000-00-00', 'Abdiansah', 2016, '-'),
+(5, 'online', 'rumah monik', '-', '2023-01-27', 'Rudi Sutomo', 2019, 'Josie GF Purba'),
+(6, 'online', '-', 'https://www.w3.org/Provider/Style/dummy.html', '2023-01-23', 'Rudi Sutomo', 2021, '-'),
+(7, 'online', '-', 'https://www.w3.org/Provider/Style/dummy.html', '2023-01-21', 'Rudi Sutomo', 2019, '-'),
+(8, 'offline', 'UMN ruang 1', '-', '2023-01-21', 'Rudi Sutomo', 2019, 'Anros Monica Hutagalung');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_catat`
+--
+
+CREATE TABLE `tb_catat` (
+  `id` int(11) NOT NULL,
+  `jenis` varchar(120) NOT NULL,
+  `lokasi` varchar(120) NOT NULL,
+  `link` varchar(120) NOT NULL,
+  `tgl_bimbingan` date NOT NULL,
+  `topik` varchar(256) NOT NULL,
+  `feedback` varchar(256) NOT NULL,
+  `angkatan` int(11) NOT NULL,
+  `mahasiswa` varchar(120) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tb_catat`
+--
+
+INSERT INTO `tb_catat` (`id`, `jenis`, `lokasi`, `link`, `tgl_bimbingan`, `topik`, `feedback`, `angkatan`, `mahasiswa`) VALUES
+(1, 'online', 'UMN ruang 1', '-', '2023-01-31', 'Magang', 'Tambahkan latar belakang', 2019, 'Anros Monica Hutagalung'),
+(2, 'online', 'rumah monik', '-', '2023-01-27', 'Bimbingan Akademik', 'Ambil KRS', 2019, 'Josie GF Purba');
 
 -- --------------------------------------------------------
 
@@ -52,7 +132,9 @@ INSERT INTO `user` (`id`, `nomorinduk`, `name`, `email`, `image`, `password`, `a
 (10, '0', 'Amos Augusto Silangit', 'amosaugustos@gmail.com', 'default.jpg', '$2y$10$eDt/b/Emb7P1C0sE8R0s.uOmZb3agYbZiFQblZ7uVuPgDWMo11LqC', 0, 0, 2, 1, 1672301590),
 (11, '860968', 'Ahmad Faza', 'ahmad.faza@umn.ac.id', 'default.jpg', '$2y$10$zb6R/iVkaPfvK3BJiLNB.OhmbgCl51ATX3t6OpuVGq/2.3McLioJ.', 0, 0, 3, 1, 1672304529),
 (12, '00000003593', 'Felix Ronaldi', 'felix.ronaldi@student.umn.ac.id', 'default.jpg', '$2y$10$ERG5m.7t11/7V/WL4943QefF6i1wScDf65mH/rAVDK5tOK0YZBO1G', 2018, 0, 2, 1, 1672408189),
-(13, '', 'Rudi Sutomo', 'rudi.sutomo@umn.ac.id', 'default.jpg', '$2y$10$pUefGOhxC6bhHEkfl9xjWOR4.lyqvPXdUb7Mnh22ujvlGEqkO2Th.', 0, 0, 3, 1, 1672634303);
+(13, '679406', 'Rudi Sutomo', 'rudi.sutomo@umn.ac.id', 'default.jpg', '$2y$10$pUefGOhxC6bhHEkfl9xjWOR4.lyqvPXdUb7Mnh22ujvlGEqkO2Th.', 0, 0, 3, 1, 1672634303),
+(14, '0', 'admin', 'admin@umn.ac.id', 'default.jpg', '$2y$10$i6fiOgpysVwV03VRVpIc/eLAO2V1k5e7dTRtxW4FK..kJNE72y2I6', 0, 0, 1, 1, 1672720443),
+(15, '00000034848', 'Anros Monica Hutagalung', 'anros.monica@student.umn.ac.id', 'default.jpg', '$2y$10$AVCXkn1gQDLg/IEx7Ty6Xuc1.4tPP1nY11z6JxLPTNAHGkyokQCmu', 2019, 0, 2, 1, 1672902206);
 
 -- --------------------------------------------------------
 
@@ -121,7 +203,7 @@ CREATE TABLE `user_role` (
 
 INSERT INTO `user_role` (`id`, `role`) VALUES
 (1, 'Administrator'),
-(2, 'Member'),
+(2, 'Mahasiswa'),
 (3, 'Dosen');
 
 -- --------------------------------------------------------
@@ -160,6 +242,24 @@ INSERT INTO `user_sub_menu` (`id`, `menu_id`, `title`, `url`, `icon`, `is_active
 --
 
 --
+-- Indexes for table `tb_bimbingan`
+--
+ALTER TABLE `tb_bimbingan`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tb_buatjadwal`
+--
+ALTER TABLE `tb_buatjadwal`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tb_catat`
+--
+ALTER TABLE `tb_catat`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `user`
 --
 ALTER TABLE `user`
@@ -194,10 +294,28 @@ ALTER TABLE `user_sub_menu`
 --
 
 --
+-- AUTO_INCREMENT for table `tb_bimbingan`
+--
+ALTER TABLE `tb_bimbingan`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT for table `tb_buatjadwal`
+--
+ALTER TABLE `tb_buatjadwal`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT for table `tb_catat`
+--
+ALTER TABLE `tb_catat`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `user_access_menu`
@@ -221,7 +339,7 @@ ALTER TABLE `user_role`
 -- AUTO_INCREMENT for table `user_sub_menu`
 --
 ALTER TABLE `user_sub_menu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

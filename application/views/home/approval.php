@@ -209,25 +209,34 @@
                         <table class="table table-hover">
                             <thead>
                                 <tr>
+                                    <th scope="col">No</th>
                                     <th scope="col">Nama Mahasiswa</th>
                                     <th scope="col">NIM</th>
-                                    <th scope="col">Email</th>
-                                    <th scope="col">Angkatan</th>
+                                    <th scope="col">Tanggal Bimbingan</th>
+                                    <th scope="col">Topik Bahasan</th>
+                                    <th scope="col">Dosen Pembimbing</th>
                                     <th scope="col">Detail</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="col"></th>
-                                    <th scope="col"></th>
-                                    <th scope="col"></th>
-                                    <th scope="col"></th>
-                                    <th scope="col">
-                                        <button>Accept</button>
-                                        <button>Reject</button>
-                                    </th>
-                                </tr>
-                            </tbody>
+                            <?php
+                            $no = 1;
+                            foreach ($bimbingan as $bim) :
+                            ?>
+                                <tbody>
+                                    <tr>
+                                        <td scope="col"><?php echo $no++ ?></td>
+                                        <td scope="col"><?php echo $bim->nama ?></td>
+                                        <td scope="col"><?php echo $bim->nim ?></td>
+                                        <td scope="col"><?php echo $bim->tgl_bimbingan ?></td>
+                                        <td scope="col"><?php echo $bim->topik ?></td>
+                                        <td scope="col"><?php echo $bim->dospem ?></td>
+                                        <td>
+                                            <button>accept</button>
+                                            <button>reject</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            <?php endforeach; ?>
                         </table>
 
                         <div class="form-group row">
